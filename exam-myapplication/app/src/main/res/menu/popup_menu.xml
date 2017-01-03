@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.andoidsrc.popupmenu.MainActivity" >
+
+    <item
+        android:id="@+id/damage_up"
+        android:title="Total Damage"
+        android:visible="true"/>
+    <item
+        android:id="@+id/auto_click"
+        android:title="Auto Click"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/big_clicker"
+        android:title="Big Clicker"
+        android:visible="true"/>
+    <item
+        android:id="@+id/mega_clicker"
+        android:title="Mega Clicker"
+        android:visible="true"/>
+
+</menu>

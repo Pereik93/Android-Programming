@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/onTouch_layout"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#B2DBBF"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hfad.myapplication.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_clicks"
+        android:layout_centerHorizontal="true"
+        android:text="@string/total_clicks"
+        android:textSize="22dp"
+        />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cps_view"
+    android:layout_centerHorizontal="true"
+    android:text="@string/cps"
+    android:layout_below="@id/total_clicks"
+        android:textSize="22dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clickDamage_view"
+        android:layout_centerHorizontal="true"
+        android:text="@string/total_clicks"
+        android:layout_below="@id/cps_view"
+        android:textSize="22dp"
+        />
+
+
+    <ImageView
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:id="@+id/cash_image_view"
+    android:layout_centerInParent="true"
+    android:background="@drawable/background_cash" />
+
+    <com.wunderlist.slidinglayer.SlidingLayer
+        android:id="@+id/slidingLayer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:elevation="2dip">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#247BA0"
+            android:textColor="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shop_view"
+                android:layout_alignParentLeft="true"
+                android:text="@string/shop"
+                android:textColor="#FFF"
+                android:textSize="28dp"
+                android:drawableRight="@drawable/shop_cash"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingTop="10dp"
+                android:paddingBottom="@dimen/activity_vertical_margin"/>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/shop_view"
+                android:clickable="true"
+                android:textColor="#FFF">
+            </ListView>
+
+
+
+
+        </RelativeLayout>
+
+    </com.wunderlist.slidinglayer.SlidingLayer>
+
+
+</RelativeLayout>
+
